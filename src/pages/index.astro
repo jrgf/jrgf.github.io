@@ -1,0 +1,18 @@
+---
+import FirstSection from "../components/FirstSection.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import SecndSection from "../components/SecndSection.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+---
+
+
+<BaseLayout pageTitle="José R. García">
+	<Header/>
+		<main class="mb-auto max-w-4xl md:px-20 p-8">
+			<FirstSection/>	
+			<SecndSection/>
+		</main>
+	<Footer/>
+</BaseLayout>

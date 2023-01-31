@@ -1,0 +1,17 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+
+---
+
+
+<BaseLayout pageTitle="My Projects">
+		
+		<main class="m-auto max-w-4xl md:px-20 p-8">
+			<Header/>
+				<ProjectSection/>
+			<Footer/>
+		</main>
+</BaseLayout>
