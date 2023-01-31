@@ -1,6 +1,7 @@
 ---
 const {pageTitle} = Astro.props;
 import '../styles/global.css'
+import {Spa} from 'astro-spa';
 ---
 <!DOCTYPE html>
 <html lang="en" class="bg-cover" >
@@ -14,8 +15,10 @@ import '../styles/global.css'
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>{pageTitle}</title>
 </head>
-<body class="bg-gray-900 bg-opacity-80 sm:text-xl  text-lg flex flex-col min-h-screen justify-center items-center">
+<body class=" bg-stone-900 bg-opacity-80 sm:text-xl  text-lg flex flex-col min-h-screen justify-center items-center">
+   
     <slot/>
+    <Spa defaultAnimation={false} progressBar={false}/>
     <script>
         import '../scripts/menu.js';
     </script>
