@@ -9,9 +9,14 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), astroImageTools, image(
+  site: 'https://jrgf.github.io',
+  integrations: [
+    tailwind(), 
+    astroImageTools, 
+    image(
     {
       serviceEntryPoint: '@astrojs/image/sharp'
     }
-  )]
+  ),
+  ]
 });
